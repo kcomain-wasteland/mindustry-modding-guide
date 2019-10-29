@@ -12,7 +12,6 @@
                 <h1 style="text-align:center;">placeholder(images.mindustry.header)</h1>
                 <h3 style="text-align:center">JSON Modding Guide</h3>
             </div>
-
             <div class="container jumbotron" id="general">
                 <h4 style="text-align: center;" class="display-4">General</h4>
                 <p>As of Mindustry Build v97, modding have been added to the game.</p>
@@ -102,6 +101,30 @@
                             </li>
                         </li>
                         <ul>&rdsh; ... </ul>
+                    </ul>
+                </code>
+            </div>
+            <div class="container jumbotron" id="modfile">
+                <h4 class="display-4">Mod File</h4>
+                <hr>
+                <p>Now, you'll be going to learn how to make a mod file. All you need for this part is a simple text editor. Any one will do, but i suggest Notepad++ for Windows.</p> 
+                <p>First of all, create a file inside your mod folder. It's name must be <code>mod.json</code>, or else your mod won't work.</p>
+                <p>Then, in the json file, include the following text.</p>
+                <code>
+                    {<br>
+                        "name": "YourModName"<br>
+                        "author": "YourName",<br>
+                        "description": "modDescription",<br>
+                        "version": 1.0<br>
+                    }<br>
+                </code>
+                <p>This file lets the game identifies this entire folder as a mod. That's why if you name this file other than <code>mod.json</code>, the game will not identify this as a mod, therefore not loading it.</p>
+                <code>
+                    <ul style="list-style-type:none">
+                        <li>&rdsh;YourModFolder</li>
+                        <ul style="list-style-type:none">
+                            <li>&rdsh; mod.json</li>
+                        </ul>
                     </ul>
                 </code>
             </div>
