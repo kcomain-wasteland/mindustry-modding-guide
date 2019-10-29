@@ -7,17 +7,103 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </head>
     <body>
-        <div class="container">
+        <div class="container" id="body">
             <div class="container" id="title">
                 <h1 style="text-align:center;">placeholder(images.mindustry.header)</h1>
                 <h3 style="text-align:center">JSON Modding Guide</h3>
             </div>
-            
-            <div class="container" id="general">
-                <h4 style="text-align: center;"><b>General</b></h4>
+
+            <div class="container jumbotron" id="general">
+                <h4 style="text-align: center;" class="display-4">General</h4>
                 <p>As of Mindustry Build v97, modding have been added to the game.</p>
                 <p>This change made new blocks, turrets, mechs, etc to be possible to add to the game.</p>
                 <p>You can open mods in your mindustry game by clicking the <code>mods</code>> button, then "import" or Import mod from </p>
+                <p>There are two types of mods that uses different running methods:
+                    <ul>
+                        <li>JSON Mod</li>
+                        <li>Source Mod</li>
+                    </ul>
+                </p>
+                <p>This guide will only cover JSON mods, as source mods require a much, MUCH longer tutorial.</p>
+            </div>
+            <div class="container jumbotron" id="jsonmods">
+                <h4 style="text-align: center;" class="display-4">JSON Mods</h4>
+                <hr>
+                <p>JSON mods are compatible across all platforms as long as the game build is v97 or up</p>
+            </div>
+            <div class="container jumbotron" id="sourcemods">
+                <h4 style="text-align: center;" class="display-4">Source Mods</h4>
+                <hr>
+                <p>Source mods are compatible across all platforms, but in every version. This modding method can define new things, such as new block behaviors, etc. This modding method is not covered by this modding guide as that would need a lengthy guide.</p>
+            </div>
+            <div class="container jumbotron" id="starting">
+                <h4 class="display-4">Starting off</h4>
+                <p>
+                    Now we should start modding using JSON modding.<br>
+                    First of all be sure you have this ready,you will need a simple text editor and a image editing app.<br>
+                    Then, make a folder named to your mod.
+                </p>
+                <hr>
+                <p>
+                    Make a subdirectory (a folder inside your mod folder). It doesn't need to be arranged, but should contain what this example shows.
+                </p>
+                <code>
+                    <ul style="list-style-type:none">
+                        <li>
+                            <!--$rdsh, ↳-->
+                            &rdsh; YourModFolder
+                            <li>
+                                <ul style="list-style-type:none">
+                                    <li>
+                                        &rdsh; bundles
+                                        <ul style="list-style-type:none">
+                                            &rdsh; bundle_language.properties
+                                        </ul>
+                                        <ul>&rdsh; ... </ul>
+                                    </li>
+                                </ul>
+                                <ul style="list-style-type:none">
+                                    &rdsh; content
+                                    <ul style="list-style-type:none">
+                                        <li>&rdsh; blocks<ul>&rdsh; ... </ul></li>
+                                        <li>&rdsh; items<ul>&rdsh; ... </ul></li>
+                                        <li>&rdsh; liquids<ul>&rdsh; ... </ul></li>
+                                    </ul>
+                                </ul>
+                                <ul style="list-style-type:none">
+                                    <li>&rdsh; maps</li>
+                                    <ul style="list-style-type:none">
+                                        &rdsh; map.msav
+                                    </ul>
+                                </ul>
+                                <ul style="list-style-type:none">
+                                    &rdsh; sprites
+                                    <li>
+                                        <ul style="list-style-type:none">
+                                            <li>
+                                                &rdsh; blocks
+                                                <ul>&rdsh; ... </ul>
+                                            </li>
+                                            <li>
+                                                &rdsh; drills
+                                                <ul>&rdsh; ... </ul>
+                                            </li>
+                                            <li>
+                                                &rdsh; environment
+                                                <ul>&rdsh; ... </ul>
+                                            </li>
+                                            <li>
+                                                &rdsh; turrets
+                                                <ul>&rdsh; ... </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </li>
+                        <ul>&rdsh; ... </ul>
+                    </ul>
+                </code>
             </div>
         </div>
     </body>
